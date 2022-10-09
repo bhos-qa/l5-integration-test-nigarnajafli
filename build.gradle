@@ -12,8 +12,16 @@ repositories {
     mavenCentral()
 }
 
+//dependencies {
+//    implementation 'org.springframework.boot:spring-boot-starter'
+//    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+//    implementation 'net.thauvin.erik.httpstatus:httpstatus:1.0.5'
+//}
+
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
